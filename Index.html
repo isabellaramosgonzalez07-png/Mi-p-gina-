@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lo que sé de ti</title>
+<style>
+:root{--bg:#faf7f2;--card:#fff;--text:#2a2622;--muted:#6f675e;--accent:#c4552d;--accent2:#2d6ac4;--line:#e8e1d6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1917;--card:#252220;--text:#f0ebe4;--muted:#a39a8f;--accent:#f08a63;--accent2:#7fa8ee;--line:#3a3532}}
+:root[data-theme="dark"]{--bg:#1b1917;--card:#252220;--text:#f0ebe4;--muted:#a39a8f;--accent:#f08a63;--accent2:#7fa8ee;--line:#3a3532}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,"Times New Roman",serif;line-height:1.55}
+main{max-width:720px;margin:0 auto;padding:28px 18px 48px}
+h1{font-size:2rem;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 28px;font-family:system-ui,sans-serif;font-size:.95rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;margin-bottom:20px}
+h2{font-size:1.3rem;margin:0 0 4px}
+.tag{display:inline-block;font-family:system-ui,sans-serif;font-size:.78rem;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--accent);color:#fff;margin-bottom:10px}
+.tag.b{background:var(--accent2)}
+.goal{font-family:system-ui,sans-serif;font-size:.95rem;color:var(--muted);margin:0 0 14px}
+ul{margin:0;padding-left:20px}
+li{margin-bottom:6px}
+.bar{height:10px;background:var(--line);border-radius:99px;overflow:hidden;margin:6px 0 4px}
+.bar span{display:block;height:100%;background:var(--accent);border-radius:99px}
+.bar.b span{background:var(--accent2)}
+.lbl{font-family:system-ui,sans-serif;font-size:.85rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chip{font-family:system-ui,sans-serif;font-size:.85rem;padding:5px 12px;border:1px solid var(--line);border-radius:99px}
+footer{color:var(--muted);font-family:system-ui,sans-serif;font-size:.8rem;text-align:center;margin-top:28px}
+</style>
+</head>
+<body>
+<main>
+<h1>Lo que sé de ti</h1>
+<p class="sub">Un resumen de lo que me has contado hasta ahora.</p>
+
+<section class="card">
+  <span class="tag">Francés</span>
+  <h2>De A1 a B1 en 30 días</h2>
+  <p class="goal">30 minutos diarios · examen inicial y examen final</p>
+  <div class="bar"><span style="width:23%"></span></div>
+  <div class="lbl">7 lecciones completadas (de ~30 días)</div>
+  <ul style="margin-top:14px">
+    <li>Empezaste con un examen de nivel: acertaste la frase básica (A1) pero no reconociste el condicional (si + imperfecto).</li>
+    <li>Aprendes mejor con historias y contexto, y quieres ejercicios de comprensión auditiva.</li>
+    <li>Quieres lecciones divertidas, con trucos y mnemónicas, y guardar el vocabulario en uno de tus cuadernos.</li>
+    <li>Lecciones hechas con todas las preguntas correctas: <em>Le Café du Coin</em>, <em>Une Nouvelle Amie</em>, <em>Le Passé</em>, <em>Le Matin de Thomas</em>, <em>Les Projets</em>, <em>Les Projets du Week-end</em> y <em>Quand Marie Était Petite</em>.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <span class="tag b">Inglés</span>
+  <h2>De A2 a C1 en 45 días</h2>
+  <p class="goal">30 minutos diarios · examen inicial y examen final</p>
+  <div class="bar b"><span style="width:4%"></span></div>
+  <div class="lbl">2 lecciones completadas (de ~45 días)</div>
+  <ul style="margin-top:14px">
+    <li>Estudiaste inglés en la escuela y ahora cursas segundo semestre de lenguas extranjeras en la universidad (nivel A2).</li>
+    <li>Te encanta leer, escuchar y hablar en inglés, pero la gramática se te dificulta.</li>
+    <li>En el examen inicial mostraste buen vocabulario básico y manejo del condicional, pero traduces literalmente el present perfect continuous ("llevo X tiempo haciendo").</li>
+    <li>Lección 1, <em>The Coffee Shop Regular</em> (FOR/SINCE): 3/3. Lección 2, <em>The Boy Who Used to Be Shy</em> (used to): 2/3, con el falso amigo "novel" como tropiezo.</li>
+    <li>Igual que con el francés: lecciones divertidas, vocabulario en tu cuaderno y examen final.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>En común</h2>
+  <p class="goal">Cómo te gusta aprender</p>
+  <div class="chips">
+    <span class="chip">Historias y contexto</span>
+    <span class="chip">Trucos y mnemónicas</span>
+    <span class="chip">Comprensión auditiva</span>
+    <span class="chip">Vocabulario en cuaderno</span>
+    <span class="chip">30 min al día</span>
+    <span class="chip">Examen final</span>
+  </div>
+</section>
+
+<footer>Esto es todo lo que tengo guardado por ahora. Cuéntame más y lo iré completando.</footer>
+</main>
+</body>
+</html>
